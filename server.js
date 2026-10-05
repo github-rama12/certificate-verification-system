@@ -1,4 +1,5 @@
 const dns = require('dns');
+// Railway deployment sync - fixed server version
 
 dns.setServers(['8.8.8.8', '1.1.1.1']);
 
