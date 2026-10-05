@@ -1,0 +1,8 @@
+{
+  "name": "certificate-verification-system",
+  "version": "1.0.0",
+  "description": "Certificate verification API with QR generation",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node --watch server.js"},
+  "dependencies": {"dotenv":"^16.4.7","express":"^4.21.2","mongoose":"^8.9.5","qrcode":"^1.5.4"}
+}
