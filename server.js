@@ -74,6 +74,5 @@ async function start() {
     try { await mongoose.connect(process.env.MONGODB_URI); console.log('MongoDB connected'); }
     catch (e) { console.error('MongoDB connection failed:', e.message); }
   } else console.warn('MONGODB_URI not set. Database routes will not work until configured.');
-  app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
-}
+  app.listen(port, '0.0.0.0', () => console.log(`Server running on port ${port}`));
 start();
