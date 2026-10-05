@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Certificate Verification</title>
 
     <style>
+
         /* ================================
            RESET
         ================================= */
@@ -364,9 +366,11 @@
             .info-grid {
                 grid-template-columns: 1fr;
             }
+
         }
 
     </style>
+
 </head>
 
 
@@ -577,6 +581,8 @@
                     <div class="info-grid">
 
 
+                        <!-- ONLY START DATE -->
+
                         <div class="info-item">
 
                             <div class="info-label">
@@ -586,23 +592,6 @@
                             <div
                                 class="info-value"
                                 id="startDate">
-
-                                —
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="info-item">
-
-                            <div class="info-label">
-                                End Date
-                            </div>
-
-                            <div
-                                class="info-value"
-                                id="endDate">
 
                                 —
 
@@ -634,6 +623,7 @@
 
         </div>
 
+
     </div>
 
 
@@ -642,6 +632,7 @@
     ================================= -->
 
     <script>
+
 
         /*
          * Get Certificate ID
@@ -755,10 +746,12 @@
                         "title"
                     );
 
+
                 const badge =
                     document.getElementById(
                         "badge"
                     );
+
 
                 const footer =
                     document.getElementById(
@@ -862,13 +855,8 @@
 
 
                 /*
-                 * End date
+                 * End date has been intentionally removed.
                  */
-
-                document.getElementById(
-                    "endDate"
-                ).textContent =
-                    certificate.endDate || "—";
 
 
             } catch (error) {
@@ -888,7 +876,7 @@
                  */
 
                 document.getElementById(
-                    "content"
+                    "certificateContent"
                 ).innerHTML = `
 
                     <div class="error">
@@ -950,5 +938,7 @@
 
     </script>
 
+
 </body>
+
 </html>
